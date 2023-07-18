@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(36, 100%, 99%);
+    width: 100%;
+    padding: 1em 7em 1em 7em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-right: 3em;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 1em;
+}
+
+.menuItems {
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    font-family: inter;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.menuItems:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.article {
+    display: flex;
+    padding: 0.5em 0.2em 2em 1em;
+    margin: 0em;
+}
+
+.fa-desk {
+    width: 70%;
+}
+
+.main img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.fa-deskunder {
+    display: flex;
+}
+
+.fa-word {
+    width: 50%;
+    padding-right: 1em;
+}
+
+.fa-word h1 {
+    font-size: 35px;
+    font-family: inter;
+    font-weight: 800;
+    padding-right: 2em;
+    letter-spacing: 2px;
+    height: 4.8em;
+    padding-left: 5px;
+}
+
+.se-word {
+    width: 50%;
+}
+
+.se-word p {
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 500;
+    color: hsl(236, 13%, 42%);
+    opacity: 90%;
+    height: 6em;
+}
+
+button {
+    padding: 0.9em 2.2em;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+    letter-spacing: 4px;
+    border: 0px;
+    font-family: inter;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.sidebox {
+    background-color: hsl(240, 100%, 5%);
+    width: 30%;
+    height: 30em;
+    margin: 0em 3em 0em 1.5em;
+    padding-left: 1.2em;
+    padding-right: 2em;
+    padding-top: 0em;
+}
+
+.sidebox h1 {
+    font-family: inter;
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+    padding-top: 1.5em;
+}
+
+.headlines {
+    color: white;
+    font-family: inter;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.headlines:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+span p {
+    color: white;
+    font-family: inter;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 1em 1em 2.2em 0em;
+    border-bottom: 1px solid white;
+}
+
+#sp {
+    border-bottom: 0px solid black;
+}
+
+.secForDiv {
+    margin: 4em 0em;
+}
+
+.section2 {
+    display: flex;
+    margin: 2em 0em;
+    padding-right: 2em;
+}
+
+.boxmodel {
+    display: flex;
+    padding: 0px;
+}
+
+.storyimg img {
+    width: 80%;
+    padding-left: 15px;
+}
+
+.details h1 {
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    font-size: 23px;
+    font-family: inter;
+    padding-bottom: 10px;
+}
+
+.details h2 {
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+    font-size: 17px;
+    font-family: inter;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.details h2:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.details h3 {
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: inter;
+    padding-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width:900px) {
+    .openMenu {
+        display: none;
+    }
+    .closeMenu {
+        display: none;
+    }
+    .fa-mob {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .fa-desk {
+        display: none;
+    }
+    .mainMenu {
+        position: fixed;
+        height: 100vh;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+    body {
+        padding: 0px;
+        margin: 0px;
+        display: contain;
+    }
+    .article {
+        padding: 0px;
+        display: block;
+    }
+}
