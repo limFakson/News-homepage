@@ -1,13 +1,16 @@
-const mainMenu = document.querySelector('.mainMenu')
-const openMenu = document.querySelector('.openMenu')
-const closeMenu = document.querySelector('.closeMenu')
-const menuItems = document.querySelector('.menuItems')
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
 
-openMenu.addEventListener('click', show)
-closeMenu.addEventListener('click', close)
+
+
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
 
 // close menu when you click on a menu item 
-menuItems.forEach(item => {
+menu_items.forEach(item => {
     item.addEventListener('click', function() {
         close();
     })
