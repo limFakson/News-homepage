@@ -168,6 +168,13 @@ span p {
     margin: 4em 0em;
 }
 
+.secForDiv h1 {
+    font-family: inter;
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+}
+
 .section2 {
     display: flex;
     margin: 2em 0em;
@@ -254,14 +261,14 @@ span p {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:800px) and (min-width:601px) {
     .fa-mob {
         display: none;
     }
     .mainMenu {
         position: fixed;
         height: 100svh;
-        width: 80%;
+        width: 70%;
         z-index: 40;
         flex-direction: column;
         justify-content: flex-start;
@@ -271,6 +278,7 @@ span p {
         right: 0;
         display: none;
         overflow: hidden;
+        padding-top: 5rem;
     }
     body {
         padding: 1em;
@@ -288,16 +296,191 @@ span p {
     nav .closeMenu {
         display: block;
         align-self: end;
-        position: relative;
+        position: absolute;
         right: 3em;
         top: 1.7em;
     }
     nav .closeMenu img {
         border: 1px solid transparent;
-        width: 12px;
+        width: 25px;
+    }
+    ul li {
+        padding: 1.6em;
     }
     .article {
-        padding: 0px;
+        padding: 0;
+        margin-top: 1em;
         display: grid;
+    }
+    .fa-desk {
+        width: auto;
+    }
+    .sidebox {
+        margin-top: 1em;
+        width: auto;
+    }
+    .secForDiv {
+        margin: 1em 0em;
+    }
+}
+
+@media (max-width:600px) {
+    .fa-desk {
+        display: none;
+    }
+    .mainMenu {
+        position: fixed;
+        height: 100svh;
+        width: 70%;
+        z-index: 40;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: center; */
+        background-color: #fff;
+        transition: top 0.5s ease-in-out;
+        right: 0;
+        display: none;
+        overflow: hidden;
+        padding-top: 9rem;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    nav {
+        padding: 1em 1em;
+    }
+    nav .sitelogo .img {
+        width: 60%;
+    }
+    nav .openMenu {
+        padding-right: 0em;
+    }
+    nav .closeMenu {
+        display: block;
+        align-self: end;
+        position: absolute;
+        right: 1.5em;
+        top: 1.5em;
+    }
+    nav .closeMenu img {
+        border: 1px solid transparent;
+        width: 38px;
+    }
+    ul li {
+        padding: 0.8em;
+        font-size: 20px;
+    }
+    .article {
+        padding: 1em;
+        margin-top: 1em;
+        display: grid;
+    }
+    .fa-mob {
+        width: 100%;
+    }
+    .fa-mob img {
+        max-width: 100%;
+    }
+    .fa-mobunder h1 {
+        font-size: 40px;
+        font-family: inter;
+        font-weight: 800;
+        padding-top: 1em;
+        padding-right: 2em;
+    }
+    .fa-mobunder h3 {
+        font-size: 16px;
+        font-family: inter;
+        font-weight: 500;
+        color: hsl(236, 13%, 42%);
+        padding-right: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .sidebox {
+        padding: 0.5em 2em;
+        margin: 0;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .secForDiv {
+        margin: 1em 1em;
+    }
+    .secForDiv h1 {
+        padding-top: 1em;
+    }
+    .section2 {
+        display: block;
+    }
+    .section2 .boxmodel {
+        padding: 0;
+        padding-top: 1.5em;
+    }
+    .storyimg img {
+        max-width: 140px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:400px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    nav {
+        padding: 1em 1em 0.6em 1em;
+    }
+    nav .sitelogo .img {
+        width: 60%;
+    }
+    nav .openMenu {
+        padding-right: 0em;
+    }
+    nav .closeMenu {
+        display: block;
+        align-self: end;
+        position: absolute;
+        right: 1.5em;
+        top: 1.5em;
+    }
+    nav .closeMenu img {
+        border: 1px solid transparent;
+        width: 38px;
+    }
+    ul li {
+        padding: 0.8em;
+        font-size: 20px;
+    }
+    .article {
+        padding: 0.5em;
+        margin-top: 1em;
+        display: grid;
+    }
+    .sidebox {
+        padding: 0.5em 2em;
+        margin: 0;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .secForDiv {
+        margin: 1em 1em;
+    }
+    .section2 {
+        display: block;
+    }
+    .section2 .boxmodel {
+        padding: 0;
+        padding-top: 0.2em;
+    }
+    .boxmodel .details {
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .storyimg img {
+        max-width: 1800px;
+        padding-left: 0;
+        padding-top: 1.3em;
     }
 }
